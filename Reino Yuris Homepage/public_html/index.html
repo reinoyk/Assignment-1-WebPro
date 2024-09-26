@@ -533,36 +533,7 @@
     <script src="assets/js/main.js"></script>
 
 	<!-- Server js -->
-    <script src="/assets/scripts.js" defer></script>
-
-    <!-- Directory setting -->
-    <script>
-        // Function to scroll smoothly to the specific section
-        function smoothScrollToSection(sectionId) {
-            document.querySelector(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    
-        // Check the URL for a specific path and redirect accordingly
-        document.addEventListener('DOMContentLoaded', function () {
-            const currentPath = window.location.pathname;
-    
-            // Define the mapping of paths to sections
-            const sectionMap = {
-                "/quiz1": "#home",
-                "/quiz1/profile": "#about",
-                "/quiz1/hometown": "#hometown",
-                "/quiz1/food": "#local-food",
-                "/quiz1/tourist": "#tourist-places"
-            };
-    
-            // Get the corresponding section ID
-            if (sectionMap[currentPath]) {
-                smoothScrollToSection(sectionMap[currentPath]);
-            }
-        });
-    </script>    
+    <script src="/assets/server.js" defer></script>
 
 </body>
 </html>
