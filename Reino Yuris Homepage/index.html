@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+<div class="content" id="content"></div>
     <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>
     <header class="header">
         <div class="container">
@@ -29,7 +30,7 @@
             </div>
         </div>
     </header>
-   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510" id="main-navbar">
+   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
     <div class="container">
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,28 +38,33 @@
         <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#/quiz1" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#profile" class="nav-link">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#hometown" class="nav-link">Hometown</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#tourist" class="nav-link">Tourist</a>
+                    <a href="#/quiz1/profile" class="nav-link">Profile</a>
                 </li>
             </ul>
-            <ul class="navbar-nav brand" id="brand-section">
-                <img src="assets/imgs/logo_pic.jpeg" alt="" class="brand-img" id="navbar-image">
-                <li class="brand-txt" id="brand-name" style="display: none;">
+            <ul class="navbar-nav brand">
+                <img src="assets/imgs/logo_pic.jpeg" alt="" class="brand-img">
+                <li class="brand-txt">
                     <h5 class="brand-title">Reino Yuris</h5>
                     <div class="brand-subtitle">Informatics Student</div>
                 </li>
             </ul>
+            <ul class="navbar-nav ml-auto">         
+                <li class="nav-item">
+                    <a href="#/quiz1/hometown" class="nav-link">Hometown</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#/quiz1/food" class="nav-link">Food</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#/quiz1/tourist" class="nav-link">Tourist</a>
+                </li>
+            </ul>
         </div>
     </div>
-  </nav>
+</nav>
     <div class="container-fluid">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
