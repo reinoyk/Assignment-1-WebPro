@@ -17,6 +17,18 @@ $(document).ready(function(){
     });
 });
 
+// Smooth scrolling
+document.querySelectorAll('.navbar .nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        if (this.hash) {
+            e.preventDefault();
+            document.querySelector(this.hash).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
 // portofolio filters
 $(window).on("load", function() {
     var t = $(".portfolio-container");
