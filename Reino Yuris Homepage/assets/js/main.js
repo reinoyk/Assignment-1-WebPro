@@ -41,6 +41,21 @@ $(window).on("load", function() {
     });
 });
 
+// JavaScript for handling scroll behavior
+window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('main-navbar');
+    const brandImage = document.getElementById('navbar-image');
+    const brandName = document.getElementById('brand-name');
+
+    // If the page has scrolled beyond 200px, toggle the visibility
+    if (window.scrollY > 200) {
+        brandImage.style.display = 'none';
+        brandName.style.display = 'flex';
+    } else {
+        brandImage.style.display = 'flex';
+        brandName.style.display = 'none';
+    }
+});
 
 // google maps
 function initMap() {
